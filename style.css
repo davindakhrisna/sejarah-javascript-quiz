@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /*================================ font-weight  ================================*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*Elemen Utama*/
+
+html{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    overflow: auto;
+}
+
+.img {
+    height: auto;
+    width: 12rem;
+}
+
+p{
+    font-size: 18px; /* Set the font size */
+    color: #333; /* Set the text color */
+    margin-bottom: 20px;
+    line-height: 1.4; /* Set the line height */
+    text-align: justify;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: var(--font-semi-bold);
+    padding: 10px 20px 10px;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    font-weight: var(--font-medium);
+    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    font-weight: var(--font-regular);
+    text-align: center;
+    color: #888888;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    margin: 20px;
+}
+/* ul li input{
+    accent-color: #77ccff;
+    border: solid 1px #3388ff;
+} */
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    background-color: #03cae3;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+    font-family: inherit;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #04adc4;
+}
+button:focus{
+    outline: none;
+    background-color: #44b927;
+}
+
+.button-quiz{
+    width: 100%;
+    background-color: #10cf1d;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+    font-family: inherit;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.button-quiz:hover{
+    background-color: #0c7800;
+}
+.button-quiz:focus{
+    outline: none;
+    background-color: #44b927;
+}
+
+#mapel {
+    padding: 2rem 2rem 2rem;
+}
+
+#content {
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*Halaman Mapel*/
+.mapel-isi{
+    margin-bottom: 3rem;
+}
+
+.mapel-view{
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    height: 500px; /* Set the height of the container */
+    overflow: auto; /* Add a scrollbar if the content exceeds the height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mapel-container{
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+}
+
+.mapel-header{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Halaman Quiz*/
+
+.quiz-container{
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+}
+
+.quiz-header{
+    padding: 50px;    
+}
+
+/*Responsive*/
+
+@media (max-width : 700px){
+    html, body {
+        min-height: 100vh;
+        width: 100%;
+        scroll-behavior: smooth;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quiz-container{
+        width: 300px;
+    }
+
+    .quiz-header{
+        padding: 20px 5px;
+    }
+    .mapel-container{
+        background-color: white;
+        width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+        overflow: hidden;
+    }
+    
+    .mapel-header{
+        padding: 50px;    
+    }
+    h2{
+        font-size: 18px;
+    }
+    ul li label{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
