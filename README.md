@@ -6,3 +6,5 @@ belajar dari website ini.
 Saya ucapkan terimakasih kepada guru pembimbing sejarah saya Bu Nina yang telah membantu dalam pembuatan website ini dalam segi
 materi dan semoga siapapun yang menggunakan aplikasi ini akan memahami ilmu sejarah Indonesia lebih dalam lagi. Repository ini
 bersifat open source sehingga gunakanlah repository ini dengan leluasa.
+
+https://davindakhrisna.github.io/sejarah-javascript-quiz/
